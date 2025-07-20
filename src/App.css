@@ -6,7 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+}
+.card {
+  box-shadow: 0 10px 25px rgpa(0, 0, 0, 0.2);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +40,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.iconButton {
+  transition: all 0.2s !important;
+}
+.iconButton:hover {
+  box-shadow: 0px 7px 7px rgba(0 0 0.4) !important;
+}
+.iconButtonDone:hover {
+  border-color: #218838 !important;
+  color: #218838 !important;
+}
+.iconButtonEdit:hover {
+  background: #0069d9 !important;
+}
+.iconButtonDelete:hover {
+  background: #c82333 !important;
+}
+.card {
+  transition: all 0.2s !important;
+}
+.card:hover {
+  padding: 2px 0 2px;
+  box-shadow: 0px 7px 7px rgba(0 0 0.4) !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../public/fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: workSans;
+  src: url(../public/fonts/OpenSans_Condensed-Medium.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: workSans;
+  src: url(../public/fonts/OpenSans_Condensed-Light.ttf);
+  font-weight: 400;
 }
